@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using IvanAkcheurov.NClassify;
+using NClassify;
 using NTextCat;
 using NUnit.Framework;
 
@@ -12,7 +12,14 @@ namespace NTextCat.Test
     [TestFixture]
     public class CustomDomainCategorizerTest
     {
-        [Test]
+		[OneTimeSetUp]
+		public void SetUp()
+		{
+			var dir = Path.GetDirectoryName(GetType().Assembly.Location);
+			Environment.CurrentDirectory = dir;
+		}
+
+		[Test]
         public void Test()
         {
             var trainingDocuments =

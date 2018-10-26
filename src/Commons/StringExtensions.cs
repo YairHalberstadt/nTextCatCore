@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace IvanAkcheurov.Commons
+namespace Commons
 {
     public static class StringExtensions
     {

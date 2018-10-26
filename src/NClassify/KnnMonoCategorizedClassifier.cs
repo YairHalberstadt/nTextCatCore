@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
-namespace IvanAkcheurov.NClassify
+namespace NClassify
 {
     /// <summary>
     /// Finds the most probable label (category) for the item that hasn't been seen before.

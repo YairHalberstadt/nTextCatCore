@@ -4,7 +4,8 @@ using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
-using IvanAkcheurov.NClassify;
+using System.Configuration;
+using NClassify;
 
 namespace NTextCat
 {

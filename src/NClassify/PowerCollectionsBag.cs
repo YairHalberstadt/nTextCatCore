@@ -2,9 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
-namespace IvanAkcheurov.NClassify
+namespace NClassify
 {
     public class PowerCollectionsBag<T> : IBag<T>
     {
@@ -30,7 +29,9 @@ namespace IvanAkcheurov.NClassify
             get { return _store.DistinctItems(); }
         }
 
-        public bool AddCopies(T item, long count)
+		public long DistinctItemsCount { get; }
+
+		public bool AddCopies(T item, long count)
         {
             if (count == 1)
             {
@@ -46,7 +47,12 @@ namespace IvanAkcheurov.NClassify
             return true;
         }
 
-        public bool RemoveCopies(T item, long count)
+		public bool Add(T item, long count)
+		{
+			throw new NotImplementedException();
+		}
+
+		public bool RemoveCopies(T item, long count)
         {
             return AddCopies(item, -count);
         }

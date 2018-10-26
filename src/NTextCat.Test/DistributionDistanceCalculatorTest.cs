@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using IvanAkcheurov.NClassify;
 using NTextCat;
 using NUnit.Framework;
 using Accord.Statistics.Analysis;
+using NClassify;
 
 namespace NTextCat.Test
 {
